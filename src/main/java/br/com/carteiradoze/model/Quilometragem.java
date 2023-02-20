@@ -19,13 +19,13 @@ public class Quilometragem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotNull(message = "O campo quantidade é obrigatório")
 	public BigDecimal quantidade;
-	
-   /* @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "movimentacao_id")
-    private Movimentacao movimentacao;
+
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "movimentacao_id")
+	private Movimentacao movimentacao;
 
 	public Movimentacao getMovimentacao() {
 		return movimentacao;
@@ -33,7 +33,7 @@ public class Quilometragem {
 
 	public void setMovimentacao(Movimentacao movimentacao) {
 		this.movimentacao = movimentacao;
-	}*/
+	}
 
 	public Long getId() {
 		return id;

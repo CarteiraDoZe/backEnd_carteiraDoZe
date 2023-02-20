@@ -23,10 +23,18 @@ public class Transacao {
 
 	@NotBlank(message = "O campo tipo é obrigatório")
 	public String tipo;
-	
-	/*@OneToMany(mappedBy = "transacao", cascade = CascadeType.REMOVE)
+
+	@OneToMany(mappedBy = "transacao", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("transacao")
-	private List<Movimentacao> movimentacao;*/
+	private List<Movimentacao> movimentacao;
+
+	public List<Movimentacao> getMovimentacao() {
+		return movimentacao;
+	}
+
+	public void setMovimentacao(List<Movimentacao> movimentacao) {
+		this.movimentacao = movimentacao;
+	}
 
 	public Long getId() {
 		return id;

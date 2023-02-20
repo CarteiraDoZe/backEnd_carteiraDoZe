@@ -26,16 +26,24 @@ public class Carteira {
 
 	@NotNull(message = "O campo meta é obrigatório")
 	public BigDecimal meta;
-	
+
 	@NotNull(message = "O campo valor da entrega é obrigatório")
 	public BigDecimal valorEntrega;
-	
+
 	@NotNull(message = "O campo diaria é obrigatório")
 	public BigDecimal diaria;
-	
-	/*@OneToMany(mappedBy = "carteira", cascade = CascadeType.REMOVE)
+
+	@OneToMany(mappedBy = "carteira", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("carteira")
-	private List<Movimentacao> movimentacao;*/
+	private List<Movimentacao> movimentacao;
+
+	public List<Movimentacao> getMovimentacao() {
+		return movimentacao;
+	}
+
+	public void setMovimentacao(List<Movimentacao> movimentacao) {
+		this.movimentacao = movimentacao;
+	}
 
 	public Long getId() {
 		return id;

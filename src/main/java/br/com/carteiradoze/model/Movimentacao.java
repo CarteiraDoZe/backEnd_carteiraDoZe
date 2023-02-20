@@ -25,22 +25,38 @@ public class Movimentacao {
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotNull(message = "O campo valor é obrigatório")
 	public BigDecimal valor;
 
 	@UpdateTimestamp
 	public LocalDateTime dataTransacao;
-	
+
 	@NotBlank(message = "O campo descrição é obrigatório")
 	public String descricao;
-	
-	/*@ManyToOne
-	@JsonIgnoreProperties ("carteira")
+
+	@ManyToOne
+	@JsonIgnoreProperties("carteira")
 	private Carteira carteira;
 	@ManyToOne
-	@JsonIgnoreProperties ("transacao")
-	private Transacao transacao;*/
+	@JsonIgnoreProperties("transacao")
+	private Transacao transacao;
+
+	public Carteira getCarteira() {
+		return carteira;
+	}
+
+	public void setCarteira(Carteira carteira) {
+		this.carteira = carteira;
+	}
+
+	public Transacao getTransacao() {
+		return transacao;
+	}
+
+	public void setTransacao(Transacao transacao) {
+		this.transacao = transacao;
+	}
 
 	public Long getId() {
 		return id;
@@ -72,5 +88,5 @@ public class Movimentacao {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}	
+	}
 }
