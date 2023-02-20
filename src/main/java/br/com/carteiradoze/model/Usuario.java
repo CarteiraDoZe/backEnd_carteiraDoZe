@@ -31,7 +31,7 @@ public class Usuario {
 	public String nome;
 
 	@Schema(example = "email@email.com.br")
-	@NotNull(message = "O campo usuário é obrigatório")
+	@NotBlank(message = "O campo usuário é obrigatório")
 	@Email(message = "O campo usuário deve ser um email válido!")
 	public String usuario;
 
