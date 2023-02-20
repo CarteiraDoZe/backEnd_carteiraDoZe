@@ -43,9 +43,17 @@ public class Usuario {
 	@Size(min = 06, message = "O campo senha deve ter no minimo 06 caracteres")
 	public String senha;
 	
-	/* @OneToOne(fetch = FetchType.LAZY)
+/*	@OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "carteira_id")
-    private Carteira carteira;*/
+    private Carteira carteira;
+
+	public Carteira getCarteira() {
+		return carteira;
+	}
+
+	public void setCarteira(Carteira carteira) {
+		this.carteira = carteira;
+	}*/
 
 	public Long getId() {
 		return id;
