@@ -11,7 +11,7 @@ A **_Carteira do Zé_** tem como objetivo potencializar o crescimento financeiro
 
 
 ## Fluxo do usuário
-####Primeiro acesso
+#### Primeiro acesso
 ```mermaid
 graph TD;
 Tela/Principal --> Tela/Meta;
@@ -22,7 +22,7 @@ Tela/Cadastro --> Tela/Meta;
 Tela/Meta --> Tela/Principal;
 Tela/Principal --> Seleciona/Movimentação;
 ```
-####Registro de movimentações
+#### Registro de movimentações
 ```mermaid
 graph TD;
 Tela/Principal --> Seleciona/Movimentação;
@@ -49,7 +49,7 @@ Movimentação_concluída --> Tela/Principal;
 ## Implantação em produção
 - MySQL / PostgreSQL (Deploy)
 
-# Padrão semântico de commits
+# Padrão semântico de commits utilizado
   - ***Fix:*** Usado quando o commit for feito para corrigir um problema no código
   - ***Feat:*** Usado quando tem um novo recurso no código
   - ***New:*** Novos arquivos
