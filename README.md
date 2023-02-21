@@ -1,6 +1,6 @@
 ![](https://wsrv.nl/?url=https://avatars.githubusercontent.com/u/125823767?v=4?v=4&w=100&h=100&fit=cover&mask=circle)
-# PowerGreen<br>![GitHub repo size](https://img.shields.io/github/repo-size/CarteiraDoZe/backEnd_carteiraDoZe?color=green) [![GitHub](https://img.shields.io/github/license/CarteiraDoZe/backEnd_carteiraDoZe)](https://github.com/wagnermor/PowerGreen_BackEnd/blob/main/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/CarteiraDoZe/backEnd_carteiraDoZe?color=green)
-**PowerGreen**<br>*Energia limpa em moviento*
+# Carteira do Zé<br>![GitHub repo size](https://img.shields.io/github/repo-size/CarteiraDoZe/backEnd_carteiraDoZe?color=green) [![GitHub](https://img.shields.io/github/license/CarteiraDoZe/backEnd_carteiraDoZe)](https://github.com/wagnermor/PowerGreen_BackEnd/blob/main/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/CarteiraDoZe/backEnd_carteiraDoZe?color=green)
+**Carteira do Zé**<br>*Sua carteira mais inteligente*
 # Sobre o projeto
 
 [https://carteiradoze.com.br](https://github.com/CarteiraDoZe/backEnd_carteiraDoZe "Carteira do Zé")
