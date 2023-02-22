@@ -10,10 +10,9 @@ import org.springframework.stereotype.Repository;
 
 import br.com.carteiradoze.model.Movimentacao;
 
-
 @Repository
 public interface MovimentacaoRepository extends JpaRepository<Movimentacao, Long> {
 	public List<Movimentacao> findAllByValor(@Param("valor") BigDecimal valor);
-	public List<Movimentacao> findAllByDataTransacao(@Param("data") LocalDateTime data);
 
+	public List<Movimentacao> findAllByDataTransacao(@Param("data") LocalDateTime data);
 }
