@@ -30,6 +30,7 @@ public class Movimentacao {
 	public BigDecimal valor;
 
 	@UpdateTimestamp
+	@NotNull
 	public LocalDateTime dataTransacao;
 
 	@NotBlank(message = "O campo descrição é obrigatório")
