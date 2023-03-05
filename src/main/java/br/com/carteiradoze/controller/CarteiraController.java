@@ -33,7 +33,7 @@ public class CarteiraController {
 	public ResponseEntity<List<Carteira>> GetAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
-	@GetMapping("/{id")
+	@GetMapping("/{id}")
 	public ResponseEntity<Carteira> GetById(@PathVariable Long id){
 		return repository.findById(id)
 				.map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
