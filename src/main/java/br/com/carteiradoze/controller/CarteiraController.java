@@ -22,7 +22,7 @@ import br.com.carteiradoze.model.Carteira;
 import br.com.carteiradoze.repository.CarteiraRepository;
 
 @RestController
-@RequestMapping("/carteiraze")
+@RequestMapping("/carteira")
 @CrossOrigin("*")
 public class CarteiraController {
 	
